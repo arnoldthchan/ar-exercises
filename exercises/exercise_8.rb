@@ -12,10 +12,8 @@ require_relative './exercise_7'
 puts "Exercise 8"
 puts "----------"
 
+@store1.employees.create(first_name: "Arnold", last_name: "Chan", hourly_rate: 40)
 
-private
-  def method
-  end
 # t.references :customer, index: true, foreign: true
 # t.integer :price, default: 0
 # order.order.date = date.today()
