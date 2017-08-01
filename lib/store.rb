@@ -14,8 +14,8 @@ class Store < ActiveRecord::Base
     if annual_revenue == 0
       return true
     else
-    errors[:annual_revenue] << "Store is generating revenue"
-    throw :abort
+      errors[:annual_revenue] << "Store is generating revenue"
+      throw :abort
     end
   end
 end
