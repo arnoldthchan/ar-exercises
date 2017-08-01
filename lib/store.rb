@@ -6,7 +6,7 @@ class Store < ActiveRecord::Base
 
   def has_apparel?
     if !mens_apparel && !womens_apparel
-      errors[:base] << "Apparel Missing"
+      errors[:base] << "Store must have at least one type of apparel"
     end
   end
 end
